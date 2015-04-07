@@ -1,5 +1,5 @@
 author = "Редакция [ATP] TopDen [ARMATOP]"; // Author
-onLoadName = "ЗАЧИСТКА 4.1"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
+onLoadName = "ЗАЧИСТКА_RHS v0"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
 onLoadMission = "Заходим на сайт и читаем как играть! Если вы идиот - бан вам гарантирован!"; // Description
 loadScreen = "pics\fon.jpg"; // Preview picture
 overviewText = "Выполнение нескольких задач в одном районе.";

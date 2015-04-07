@@ -79,4 +79,4 @@ simulWeatherSync;
 sleep 30;
 
 // Info text
-[str("Зачистка v4") , str(date select 1) + "." + str(date select 2) + "." + str(date select 0), str("для Арматоп")] spawn BIS_fnc_infoText;
+[str("Зачистка_RHS v0") , str(date select 1) + "." + str(date select 2) + "." + str(date select 0), str("для Арматоп")] spawn BIS_fnc_infoText;
