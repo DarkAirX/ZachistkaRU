@@ -13,35 +13,35 @@ case 0: {
 	//Iranian UNITS
 	/////////// "O_sniper_F","O_recon_M_F","O_recon_exp_F","O_recon_medic_F","O_recon_LAT_F","O_recon_TL_F","O_soldierU_AA_F","O_soldierU_AT_F","O_soldierU_LAT_F","O_soldierU_AR_F"
 	
-	ghst_side = WEST;
+	ghst_side = west;
 
-	ghst_menlist = ["B_Soldier_SL_F","B_sniper_F","B_recon_M_F","B_recon_exp_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AA_F","B_soldier_AT_F","B_soldier_LAT_F","B_soldier_AR_F","B_sniper_F","B_recon_M_F","B_recon_exp_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AA_F","B_Soldier_TL_F","B_soldier_LAT_F","B_recon_M_F"];
+	ghst_menlist = ["rhsusf_army_ucp_squadleader","rhsusf_army_ucp_sniper","rhsusf_army_ucp_marksman","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_javelin","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_aa","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_sniper","rhsusf_army_ucp_marksman","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_javelin","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_aa","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_marksman"];
 
-	ghst_diverlist = ["B_diver_f","B_diver_exp_f","B_diver_TL_f","B_diver_f","B_diver_exp_f","B_diver_f"];
+	ghst_diverlist = ["rhsusf_army_ucp_rifleman","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_rifleman","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_rifleman"]; //поставил вместо дайвером ванильных пиндосов простых
 	
-	ghst_specopslist = ["B_Soldier_SL_F","B_sniper_F","B_recon_M_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AT_F","B_soldier_LAT_F","B_soldier_AR_F","I_Soldier_AA_F","I_officer_F","I_Soldier_AR_F","I_Spotter_F","I_Sniper_F"];
+	ghst_specopslist = ["rhsusf_usmc_marpat_d_squadleader","rhsusf_usmc_marpat_d_sniper","rhsusf_usmc_marpat_d_marksman","rhsusf_usmc_marpat_d_javelin","rhsusf_usmc_marpat_d_teamleader","rhsusf_usmc_marpat_d_riflemanat","rhsusf_usmc_marpat_d_riflemanat","rhsusf_usmc_marpat_d_autorifleman_m249","rhsusf_usmc_marpat_d_stinger","rhsusf_army_ucp_driver","rhsusf_usmc_marpat_d_machinegunner","rhsusf_usmc_marpat_d_sniper","rhsusf_usmc_marpat_d_marksman"];
 
-	ghst_crewmenlist = ["B_crew_F"];
+	ghst_crewmenlist = ["rhsusf_army_ucp_crewman"];
 	
-	ghst_patrolvehlist = ["I_MRAP_03_gmg_F","B_APC_Wheeled_01_rcws_F","B_APC_Tracked_01_AA_F","B_MBT_01_cannon_F","B_APC_Wheeled_01_rcws_F","B_APC_Tracked_01_cannon_F","I_APC_Wheeled_03_cannon_F","I_MBT_03_cannon_F"];
+	ghst_patrolvehlist = ["rhsusf_m1025_d_m2","RHS_M2A2","RHS_M6","rhsusf_m1a1aimd_usarmy","RHS_M2A2","rhsusf_rg33_m2_d","RHS_M2A3_BUSKIII","rhsusf_m1a2sep1tuskid_usarmy"];
 
-	ghst_convoyvehlist = ["I_APC_Wheeled_03_cannon_F","B_Truck_01_transport_F","B_MRAP_01_gmg_F","B_Truck_01_covered_F","B_APC_Wheeled_01_rcws_F","I_APC_Wheeled_03_cannon_F","I_APC_Wheeled_03_cannon_F","B_MRAP_01_gmg_F","B_APC_Wheeled_01_rcws_F","I_MBT_03_cannon_F"];
+	ghst_convoyvehlist = ["RHS_M2A3_BUSKIII","rhsusf_M1078A1P2_B_d_fmtv_usarmy","rhsusf_m1025_d_Mk19","rhsusf_M1083A1P2_B_d_fmtv_usarmy","RHS_M2A2","RHS_M6","RHS_M2A3_BUSKIII","rhsusf_rg33_m2_d","RHS_M2A2","rhsusf_m1a1fep_d"];
 
-	ghst_staticlist = ["B_HMG_01_high_F","B_Mortar_01_F"];
+	ghst_staticlist = ["RHS_M2StaticMG_D","B_Mortar_01_F"]; //тут миномет ванильный
 	
-	ghst_patrolboatlist = ["B_Boat_Armed_01_minigun_F"];
+	ghst_patrolboatlist = ["B_Boat_Armed_01_minigun_F"]; // лодки у пиндосов нет
 	
-	ghst_transport_heli_list = "B_Heli_Transport_01_camo_F";
+	ghst_transport_heli_list = "RHS_UH60M_d";
 	
-	ghst_attack_heli_list = "B_Heli_Attack_01_F";
+	ghst_attack_heli_list = "RHS_AH64D";
 	
 	if (_PARAM_SU35 == 0) then {
-	ghst_patrol_air_list = ["B_Plane_CAS_01_F","I_Plane_Fighter_03_AA_F"];
+	ghst_patrol_air_list = ["RHS_A10","RHS_A10"];
 	} else {
-	ghst_patrol_air_list = ["B_Plane_CAS_01_F"];
+	ghst_patrol_air_list = ["RHS_A10"];
 	};
 	
-	ghst_commanderlist = ["B_Story_Colonel_F","B_Story_Protagonist_F","B_Story_SF_Captain_F"];
+	ghst_commanderlist = ["rhsusf_army_ucp_driver","rhsusf_usmc_fr_marpat_d_light","rhsusf_usmc_fr_marpat_d_sniper"];
 	
 	ghst_ammobox_list = "Box_NATO_Ammo_F";
 	

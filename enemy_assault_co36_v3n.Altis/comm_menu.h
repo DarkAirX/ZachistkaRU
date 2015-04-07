@@ -2,18 +2,18 @@ class CfgCommunicationMenu
 {
 	class AH99
 	{
-		text = "Mi-48 Support"; // Text displayed in the menu and in a notification
+		text = "Ka-52 Support"; // Text displayed in the menu and in a notification
 		submenu = ""; // Submenu opened upon activation
-		expression = "ghst_helosupport = [(getmarkerpos ""ghst_player_support""),""O_Heli_Attack_02_black_F"",30,[400, 150],30,[false,""ColorRed""],""ghst_helosup""] spawn ghst_fnc_airsupport;"; // Code executed upon activation (ignored when the submenu is not empty)
+		expression = "ghst_helosupport = [(getmarkerpos ""ghst_player_support""),""RHS_Ka52_vvsc"",30,[400, 150],30,[false,""ColorRed""],""ghst_helosup""] spawn ghst_fnc_airsupport;"; // Code executed upon activation (ignored when the submenu is not empty)
 		icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\attack_ca.paa"; // Icon displayed permanently next to the command menu
 		cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa"; // Custom cursor displayed when the item is selected
 		enable = "1"; // Simple expression condition for enabling the item
 	};
 	class A164
 	{
-		text = "To-199 Support"; // Text displayed in the menu and in a notification
+		text = "Su-25 Support"; // Text displayed in the menu and in a notification
 		submenu = ""; // Submenu opened upon activation
-		expression = "ghst_cassupport = [(getmarkerpos ""ghst_player_support""),""O_Plane_CAS_02_F"",30,[600, 600],30,[false,""ColorRed""],""ghst_cassup""] spawn ghst_fnc_airsupport;"; // Code executed upon activation (ignored when the submenu is not empty)
+		expression = "ghst_cassupport = [(getmarkerpos ""ghst_player_support""),""RHS_Su25SM_KH29_vvsc"",30,[600, 600],30,[false,""ColorRed""],""ghst_cassup""] spawn ghst_fnc_airsupport;"; // Code executed upon activation (ignored when the submenu is not empty)
 		icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\cas_ca.paa"; // Icon displayed permanently next to the command menu
 		cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa"; // Custom cursor displayed when the item is selected
 		enable = "1"; // Simple expression condition for enabling the item
@@ -49,7 +49,7 @@ class CfgCommunicationMenu
 	{
 		text = "Ammo Drop"; // Text displayed in the menu and in a notification
 		submenu = ""; // Submenu opened upon activation
-		expression = "ghst_ammodrop = [player,(getmarkerpos ""ghst_player_support""),""O_Heli_Transport_04_F"",""O_supplyCrate_F"",150,30] spawn ghst_fnc_ammodrop;"; // Code executed upon activation (ignored when the submenu is not empty)
+		expression = "ghst_ammodrop = [player,(getmarkerpos ""ghst_player_support""),""RHS_Mi8mt_Cargo_vvsc"",""O_supplyCrate_F"",150,30] spawn ghst_fnc_ammodrop;"; // Code executed upon activation (ignored when the submenu is not empty)
 		icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa"; // Icon displayed permanently next to the command menu
 		cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa"; // Custom cursor displayed when the item is selected
 		enable = "1"; // Simple expression condition for enabling the item
@@ -58,7 +58,7 @@ class CfgCommunicationMenu
 	{
 		text = "Cargo Drop"; // Text displayed in the menu and in a notification
 		submenu = ""; // Submenu opened upon activation
-		expression = "ghst_drop = [player,(getmarkerpos ""ghst_player_support""),""O_Heli_Transport_04_F"",200,30] spawn ghst_fnc_cargodrop;"; // Code executed upon activation (ignored when the submenu is not empty)
+		expression = "ghst_drop = [player,(getmarkerpos ""ghst_player_support""),""RHS_Mi8mt_Cargo_vvsc"",200,30] spawn ghst_fnc_cargodrop;"; // Code executed upon activation (ignored when the submenu is not empty)
 		icon = "";//"\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa"; // Icon displayed permanently next to the command menu
 		cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa"; // Custom cursor displayed when the item is selected
 		enable = "1"; // Simple expression condition for enabling the item

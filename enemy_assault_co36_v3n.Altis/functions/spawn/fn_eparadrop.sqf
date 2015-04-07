@@ -32,7 +32,7 @@ private ["_spawnpos","_loop"];
 _loop = true;
 while {_loop} do {
 	_spawnpos = [(_objpos select 0) + (_radx * (sin(random 360))),(_objpos select 1) + (_rady * (cos(random 360))), _flyheight];
-		if (((_spawnpos distance _objpos) > (_radx - 200)) and (_spawnpos distance (getmarkerpos "respawn_east") > 1500)) exitwith {_loop = false;};
+		if (((_spawnpos distance _objpos) > (_radx - 200)) and (_spawnpos distance (getmarkerpos "Respawn_East") > 1500)) exitwith {_loop = false;};
 };
 
 //create marker

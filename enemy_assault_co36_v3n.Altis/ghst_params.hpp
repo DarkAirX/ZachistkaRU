@@ -60,13 +60,13 @@ class PARAM_Kavala
 	texts[] = {"ALL","Half","Kavala Only","Random"};
 	default = 3;
 };
-/* class PARAM_Fatigue
+class PARAM_Fatigue
 {
 	title = "    Player Fatigue:";
 	values[] = {1,0};
 	texts[] = {"ON","OFF"};
-	default = 1;
-}; */
+	default = 0;
+};
 class PARAM_PlayerVehicles
 {
 	title = "    Number of Player Vehicles Allowed:";

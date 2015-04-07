@@ -77,14 +77,14 @@ for "_o" from 1 to (_numobjs) do {
 			case "rescue":
 			{
 			private ["_powarray","_powsel"];
-			_powarray = ["C_scientist_F","O_Helipilot_F","O_officer_F","O_Pilot_F"];//"C_scientist_F","B_Helipilot_F","B_officer_F"
+			_powarray = ["C_scientist_F","rhs_pilot_combat_heli","rhs_msv_officer","rhs_msv_crew_commander"];//"C_scientist_F","rhs_pilot_combat_heli","rhs_msv_officer"
 			_powsel = _powarray call BIS_fnc_selectRandom;
 			[_random_pos,_radarray,_campmark,_powsel,_locselname] call ghst_fnc_rescue;
 			};
 			case "rescue2":
 			{
 			private ["_powarray","_powsel"];
-			_powarray = ["C_journalist_F","O_Helipilot_F","O_officer_F","O_Pilot_F"];//"C_journalist_F","B_Helipilot_F","B_officer_F"
+			_powarray = ["C_journalist_F","rhs_pilot_combat_heli","rhs_msv_officer","rhs_pilot_combat_heli"];//"C_journalist_F","rhs_pilot_combat_heli","rhs_msv_officer"
 			_powsel = _powarray call BIS_fnc_selectRandom;
 			[_random_pos,_radarray,_campmark,_powsel,_locselname] call ghst_fnc_rescue;
 			};
@@ -123,19 +123,19 @@ for "_o" from 1 to (_numobjs) do {
 			};
 			case "ZSU_AA":
 			{
-			[_random_pos,_radarray,"B_APC_Tracked_01_AA_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"RHS_M6",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "ZSU_AA2":
 			{
-			[_random_pos,_radarray,"B_APC_Tracked_01_AA_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"RHS_M6",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "ARTY":
 			{
-			[_random_pos,_radarray,"B_MBT_01_arty_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"rhsusf_m109d_usarmy",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "ARTY2":
 			{
-			[_random_pos,_radarray,"B_MBT_01_arty_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"rhsusf_m109d_usarmy",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "comtower":
 			{
@@ -147,7 +147,7 @@ for "_o" from 1 to (_numobjs) do {
 			case "Bombtruck":
 			{
 			private ["_devices","_devicesel"];
-			_devices = ["O_Truck_03_device_F","Land_Device_assembled_F","Land_Device_disassembled_F"];
+			_devices = ["rhsusf_rg33_d","Land_Device_assembled_F","Land_Device_disassembled_F"];
 			_devicesel = _devices call BIS_fnc_selectRandom;
 			[_random_pos,_radarray,_devicesel,true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};

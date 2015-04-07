@@ -15,6 +15,6 @@ _trig1cond = "this and ({_x in thisList} count playableUnits == {alive _x} count
 _trig1act = format ["['%1','succeeded'] call SHK_Taskmaster_upd; finish = true; publicvariable 'finish';", _tsk];
 _trg1 = createTrigger["EmptyDetector", _campmark];
 _trg1 setTriggerArea[25,25,0,false];
-_trg1 setTriggerActivation["EAST","PRESENT",true];
+_trg1 setTriggerActivation["WEST","PRESENT",true];
 _trg1 setTriggerTimeout[5,5,5,true];
 _trg1 setTriggerStatements[_trig1cond, _trig1act, "deleteVehicle thistrigger;"];

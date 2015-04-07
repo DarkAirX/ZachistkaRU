@@ -10,14 +10,14 @@ call ghst_fnc_acquirelocations;
 //Enemy Unit list
 call ghst_fnc_unitlist;
 
-ghst_civcars = [(getmarkerpos "center"),3000,40,true,false,EAST] execvm "functions\spawn\fn_civcars.sqf";
+ghst_civcars = [(getmarkerpos "center"),3000,40,true,false,WEST] execvm "scripts\ghst_civcars.sqf";
 
-[["AA1","AA2","AA3","AA4"],"O_APC_Tracked_02_AA_F",(random 360),false] spawn ghst_fnc_basedef;
+[["AA1","AA2","AA3","AA4"],"rhs_zsu234_aa",(random 360),false] spawn ghst_fnc_basedef;
 
 [(getmarkerpos "eairspawn"),(getmarkerpos "center"),[10000,10000],600,2,[true,15],[false,"ColorRed"]] spawn ghst_fnc_eair;
 
 _PARAM_AISkill = "PARAM_AISkill" call BIS_fnc_getParamValue;
-[[(getmarkerpos "respawn_east"),1000],[500,500],(4 + round(random 2)),[false,"ColorRed"],(_PARAM_AISkill/10)] spawn ghst_fnc_randespawn;
+[[(getmarkerpos "Respawn_East"),1000],[500,500],(4 + round(random 2)),[false,"ColorRed"],(_PARAM_AISkill/10)] spawn ghst_fnc_randespawn;
 
 //Spawn EBU C-130
 _PARAM_C130 = "PARAM_C130" call BIS_fnc_getParamValue;

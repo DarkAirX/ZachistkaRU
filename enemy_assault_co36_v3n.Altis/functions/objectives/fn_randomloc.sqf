@@ -47,7 +47,7 @@ _veh setposatl _vehpos;
 
 //spawn camo net over cache
 	if (_usenet) then {
-		_vehnet = createVehicle ["CamoNet_OPFOR_big_F",_vehpos, [], 0, "CAN_COLLIDE"];
+		_vehnet = createVehicle ["CamoNet_OPFOR_big_F",_vehpos, [], 0, "CAN_COLLIDE"]; // что-то про OPFOR
 		_vehnet allowdamage false;
 		_vehnet setdir (getdir _veh) - 180;
 		_vehnet setposatl _vehpos;

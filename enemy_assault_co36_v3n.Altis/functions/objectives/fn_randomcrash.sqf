@@ -97,5 +97,5 @@ _taskdesc = format ["Locate the %1 in %2 and check for survivors", _veh_name,_lo
 _trig1act = format ["[""%1"",'succeeded'] call SHK_Taskmaster_upd; [[playableunits,5000,100],'fnc_ghst_addscore'] spawn BIS_fnc_MP; %2 setdamage 1; deleteVehicle %2;", _tsk, _veh];
 _trg1 = createTrigger["EmptyDetector",_pos];
 _trg1 setTriggerArea[_trigrad,0,false];
-_trg1 setTriggerActivation["EAST","PRESENT",false];
+_trg1 setTriggerActivation["WEST","PRESENT",false];
 _trg1 setTriggerStatements["this",_trig1act, "deleteVehicle thistrigger;"];

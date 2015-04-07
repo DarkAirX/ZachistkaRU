@@ -7,7 +7,7 @@ ghst_AmmoBoxes_Array = [];
 ghst_Supported_AmmoBoxes = ["Box_NATO_AmmoVeh_F","B_supplyCrate_F","B_Slingload_01_Ammo_F","B_Slingload_01_Cargo_F"];
 ghst_bobcat_array = [];
 ghst_support_vehicles_bobcat = ["B_APC_Tracked_01_CRV_F"];
-
+//тут надо глянуть
 while {true} do 
 {
 	

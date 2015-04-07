@@ -18,7 +18,7 @@ for "_i" from 0 to (count _cfgvehicles)-1 do {
 		_wPic =  getText(configFile >> "cfgvehicles" >> _wCName >> "picture");
 		_wDesc = getText(configFile >> "cfgvehicles" >> _wCName >> "Library" >> "libTextDesc");	
 
-		if (((_wCName iskindof "Tank_F") or (_wCName iskindof "StaticWeapon") or (_wCName iskindof "Car_F") or (_wCName iskindof "motorcycle")) && !(_wCName iskindof "Papercar") && !(_wCName iskindof "UGV_01_base_F") && (_wside == 0) && (_wscope == 2) && ((_wfaction == "OPF_F") or (_wfaction == "OPF_G_F")) && (_wDName!="") && (_wModel!="")  && (_wpic!="")) then {
+		if (((_wCName iskindof "Tank_F") or (_wCName iskindof "StaticWeapon") or (_wCName iskindof "Car_F") or (_wCName iskindof "motorcycle")) && !(_wCName iskindof "Papercar") && !(_wCName iskindof "UGV_01_base_F") && (_wside == 0) && (_wscope == 2) && ((_wfaction == "rhs_faction_vpvo") or (_wfaction == "rhs_faction_vdv") or (_wfaction == "rhs_faction_vv") or (_wfaction == "rhs_faction_msv") or (_wfaction == "rhs_faction_vmf") or (_wfaction == "rhs_faction_rva") or (_wfaction == "rhs_faction_tv")) && (_wDName!="") && (_wModel!="")  && (_wpic!="")) then {
 		/*
 			if (_wfaction == "USMC") then {
 				_wDName = _wDName + " Woodland";
@@ -32,7 +32,7 @@ for "_i" from 0 to (count _cfgvehicles)-1 do {
 					_namelist = _namelist + [_wDName];
 			};
 		};
-		if (((_wCName iskindof "StaticWeapon") or (_wCName iskindof "Car_F") or (_wCName iskindof "motorcycle")) && !(_wCName iskindof "Papercar") && !(_wCName iskindof "UGV_01_base_F") && (_wside == 0) && (_wscope == 2) && ((_wfaction == "OPF_F") or (_wfaction == "OPF_G_F")) && (_wDName!="") && (_wModel!="")  && (_wpic!="")) then {
+		if (((_wCName iskindof "StaticWeapon") or (_wCName iskindof "Car_F") or (_wCName iskindof "motorcycle")) && !(_wCName iskindof "Papercar") && !(_wCName iskindof "UGV_01_base_F") && (_wside == 0) && (_wscope == 2) && ((_wfaction == "rhs_faction_vpvo") or (_wfaction == "rhs_faction_vdv") or (_wfaction == "rhs_faction_vv") or (_wfaction == "rhs_faction_msv") or (_wfaction == "rhs_faction_vmf") or (_wfaction == "rhs_faction_rva") or (_wfaction == "rhs_faction_tv")) && (_wDName!="") && (_wModel!="")  && (_wpic!="")) then {
 		/*
 			if (_wfaction == "USMC") then {
 				_wDName = _wDName + " Woodland";

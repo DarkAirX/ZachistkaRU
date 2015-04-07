@@ -6,14 +6,14 @@ _boatlist = execvm "scripts\boatlist.sqf";
 
 #include "addnotes.sqf"
 
-if (player iskindof "O_recon_JTAC_F") then {
+if (player iskindof "rhs_msv_aa") then {
 [player,"AH99"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_helosup", false];
 [player,"A164"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_cassup", false];
 };
 
-if (player iskindof "O_soldier_UAV_F") then {
+if (player iskindof "rhs_msv_marksman") then {
 [player,"UAV"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_uavsup", false];
 [player,"UGV"] call BIS_fnc_addCommMenuItem;
@@ -23,7 +23,7 @@ player setVariable ["ghst_puavsup", false];
 //[player,"Artillery"] call BIS_fnc_addCommMenuItem;
 };
 
-if (player iskindof "O_recon_TL_F") then {
+if (player iskindof "rhs_msv_officer_armored") then {
 [player,"AMMO"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_ammodrop", false];
 [player,"PUAV"] call BIS_fnc_addCommMenuItem;
@@ -51,7 +51,7 @@ halo addAction ["<t size='1.5' shadow='2' color='#00ffff'>Десантирова
 port_teleport addAction ["<t size='1.5' shadow='2' color='#8904B1'>Телепорт на базу ВМС</t> <img size='3' color='#8904B1' shadow='2' image='\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa'/>", {player setposasl [getmarkerpos "spawn_board_3" select 0,getmarkerpos "spawn_board_3" select 1,1.5];}, [], 5, true, true, "","alive _target"];
 port_teleport setObjectTexture [0, "\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa"];
 
-boatspawn addAction ["<t size='1.5' shadow='2' color='#8904B1'>Вернуться на базу</t> <img size='3' color='#8904B1' shadow='2' image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Heli_Transport_01_base_CA.paa'/>", {player setposatl [getmarkerpos "respawn_east" select 0,getmarkerpos "respawn_east" select 1,0.2];}, [], 5, false, true, "","alive _target"];
+boatspawn addAction ["<t size='1.5' shadow='2' color='#8904B1'>Вернуться на базу</t> <img size='3' color='#8904B1' shadow='2' image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Heli_Transport_01_base_CA.paa'/>", {player setposatl [getmarkerpos "Respawn_West" select 0,getmarkerpos "Respawn_West" select 1,0.2];}, [], 5, false, true, "","alive _target"];
 
 ghst_local_vehicles = [];
 ghst_players = [];//["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12"];

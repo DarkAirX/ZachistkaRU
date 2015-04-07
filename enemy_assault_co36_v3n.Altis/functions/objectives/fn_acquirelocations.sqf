@@ -24,7 +24,7 @@ for "_i" from 0 to (count _placesCfg)-1 do
 	_name = toUpper(getText(_place >> "name"));
 	_position = getArray (_place >> "position");
 	
-	if((_name in _namesToKeep) and (_position distance (getmarkerpos "respawn_east") > 1500)) then {
+	if((_name in _namesToKeep) and (_position distance (getmarkerpos "Respawn_West") > 1500)) then {
 		_opname = format["%1 %2", _name, _i];
 		/*
 		_mrkr = createMarker [_opname, _position];
@@ -82,7 +82,7 @@ if (_PARAM_Kavala == 1) then {
 			if !(isnil "_locsel") then {
 				_locselname = text _locsel;//get name of location
 			
-				if ((locationPosition _locsel) distance (getmarkerpos "respawn_east") > 1500 and !(_locselname in ["Sagonisi"])) then {
+				if ((locationPosition _locsel) distance (getmarkerpos "Respawn_West") > 1500 and !(_locselname in ["Sagonisi"])) then {
 					ghst_objarray = ghst_objarray + [_locsel];
 				};
 			};	
