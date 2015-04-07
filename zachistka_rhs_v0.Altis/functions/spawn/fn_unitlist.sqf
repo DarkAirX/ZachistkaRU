@@ -31,7 +31,7 @@ case 0: {
 	
 	ghst_patrolboatlist = ["B_Boat_Armed_01_minigun_F"]; // лодки у пиндосов нет
 	
-	ghst_transport_heli_list = "RHS_UH60M_d";
+	ghst_transport_heli_list = "RHS_C130J";
 	
 	ghst_attack_heli_list = "RHS_AH64D";
 	
