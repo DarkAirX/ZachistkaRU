@@ -366,7 +366,7 @@ DEBUG = false;
       switch (typename _cond) do {
         case (typename grpNull): { (_unit in (units _cond)) };
         case (typename objNull): { _unit == _cond };
-        case (typename WEST):    { (side _unit == _cond) };
+        case (typename EAST):    { (side _unit == _cond) };
         case (typename true):    { _cond };
         case (typename ""): {
           if (_cond in FACTIONLIST) then {

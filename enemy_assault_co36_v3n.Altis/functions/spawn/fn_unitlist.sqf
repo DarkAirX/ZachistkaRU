@@ -13,7 +13,7 @@ case 0: {
 	//Iranian UNITS
 	/////////// "O_sniper_F","O_recon_M_F","O_recon_exp_F","O_recon_medic_F","O_recon_LAT_F","O_recon_TL_F","O_soldierU_AA_F","O_soldierU_AT_F","O_soldierU_LAT_F","O_soldierU_AR_F"
 	
-	ghst_side = west;
+	ghst_side = WEST;
 
 	ghst_menlist = ["rhsusf_army_ucp_squadleader","rhsusf_army_ucp_sniper","rhsusf_army_ucp_marksman","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_javelin","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_aa","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_sniper","rhsusf_army_ucp_marksman","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_javelin","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_aa","rhsusf_army_ucp_teamleader","rhsusf_army_ucp_riflemanat","rhsusf_army_ucp_marksman"];
 

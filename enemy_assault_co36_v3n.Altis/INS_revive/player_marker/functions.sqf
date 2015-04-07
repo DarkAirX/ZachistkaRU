@@ -197,7 +197,7 @@ FNC_SET_PLAYER_MARKER = {
 				//End update
 				
 				// Set alpha
-				if (side _unit == WEST) then {
+				if (side _unit == EAST) then {
 					_marker setMarkerAlphaLocal 1;
 				} else {
 					_marker setMarkerAlphaLocal 0.7;
@@ -313,7 +313,7 @@ FNC_SET_PLAYER_MARKER_SERVER_SIDE = {
 				//End update
 				
 				// Set alpha
-				if (side _unit == WEST) then {
+				if (side _unit == EAST) then {
 					_marker setMarkerAlpha 1;
 				} else {
 					_marker setMarkerAlpha 0.7;

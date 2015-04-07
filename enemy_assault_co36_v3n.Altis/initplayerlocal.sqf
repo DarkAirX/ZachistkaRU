@@ -51,7 +51,7 @@ halo addAction ["<t size='1.5' shadow='2' color='#00ffff'>Десантирова
 port_teleport addAction ["<t size='1.5' shadow='2' color='#8904B1'>Телепорт на базу ВМС</t> <img size='3' color='#8904B1' shadow='2' image='\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa'/>", {player setposasl [getmarkerpos "spawn_board_3" select 0,getmarkerpos "spawn_board_3" select 1,1.5];}, [], 5, true, true, "","alive _target"];
 port_teleport setObjectTexture [0, "\A3\boat_f_beta\SDV_01\data\ui\portrait_SDV_ca.paa"];
 
-boatspawn addAction ["<t size='1.5' shadow='2' color='#8904B1'>Вернуться на базу</t> <img size='3' color='#8904B1' shadow='2' image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Heli_Transport_01_base_CA.paa'/>", {player setposatl [getmarkerpos "Respawn_West" select 0,getmarkerpos "Respawn_West" select 1,0.2];}, [], 5, false, true, "","alive _target"];
+boatspawn addAction ["<t size='1.5' shadow='2' color='#8904B1'>Вернуться на базу</t> <img size='3' color='#8904B1' shadow='2' image='\A3\air_f_beta\Heli_Transport_01\Data\UI\Heli_Transport_01_base_CA.paa'/>", {player setposatl [getmarkerpos "respawn_east" select 0,getmarkerpos "respawn_east" select 1,0.2];}, [], 5, false, true, "","alive _target"];
 
 ghst_local_vehicles = [];
 ghst_players = [];//["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12"];

@@ -88,11 +88,11 @@ if (round (random 10) > 5) then {
 	[_locselpos,_locselpos,[3000,3000],600,1,[false,15],[false,"ColorRed"]] spawn ghst_fnc_eair;
 };
 
-[_locselpos,800,18,true,false,WEST] call ghst_fnc_civcars;
+[_locselpos,800,18,true,false,EAST] call ghst_fnc_civcars;
 
 [_locselpos,800,15,_ghst_side,[false,"ColorBlack"]] call ghst_fnc_mines;
 
-[_locselpos,800,5,WEST,[false,"ColorRed"]] call ghst_fnc_ieds;
+[_locselpos,800,5,EAST,[false,"ColorRed"]] call ghst_fnc_ieds;
 
 //random objective script
 _PARAM_Tasks = "PARAM_Tasks" call BIS_fnc_getParamValue;

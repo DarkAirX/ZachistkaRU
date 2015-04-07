@@ -34,7 +34,7 @@ _loop = true;
 		_startpos = [(_position_mark select 0) + _radx * sin(random 360),(_position_mark select 1) + _rady * cos(random 360)];
 		_roads = (_startpos nearRoads 200);
 			if !(isnil "_roads") then {
-				if (((_startpos distance _position_mark) > (_radx - 200)) and !(count _roads == 0) and (_startpos distance (getmarkerpos "Respawn_East") > 1500)) exitwith {_loop = false;};
+				if (((_startpos distance _position_mark) > (_radx - 200)) and !(count _roads == 0) and (_startpos distance (getmarkerpos "respawn_east") > 1500)) exitwith {_loop = false;};
 			};
 	};
 _roadssel = _roads call BIS_fnc_selectRandom;   
